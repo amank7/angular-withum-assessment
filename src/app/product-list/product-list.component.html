@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }}
+    <i
+      [ngClass]="
+        product.available ? 'pi pi-check-circle' : 'pi pi-times-circle'
+      "
+    ></i>
+  </li>
+</ul>
